@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-from os import path, mkdir
-from sys import path as paths, argv
+from os import path, mkdir, environ
+from sys import path as paths
 from json import dumps as jdumps
 from yaml import load as yload, Loader as yLoader
 from requests import post, get
@@ -71,11 +71,12 @@ def main():
     # cookies = get_cks(pathd)
     # if not cookies:
         # return
-    print(argv)
-    for ck in argv[1:]:
+#     print(argv)
+    ck = environ["cookie"]
+#     for ck in argv[1:]:
         # cookie = cookies.get(ck)
-        print(ck)
-        sign(ck, pathd)
+#         print(ck)
+    sign(ck, pathd)
    
     # input('任意键结束：')
 
