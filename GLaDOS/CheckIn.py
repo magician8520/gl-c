@@ -26,21 +26,33 @@ def start(cookie):
         headers={'cookie': cookie, 'referer': referer, 'origin': origin, 'user-agent': useragent})
     tz = pytz.timezone('Asia/Shanghai')
     time_now = str(datetime.now(tz=tz))[:19]
-    print(f'现在时间是：{time_now}\ncheckin: {checkin.status_code} | state: {state.status_code}')
+
 
     if 'message' in checkin.text:
         mess = checkin.json()['message']
         time = state.json()['data']['leftDays']
         days = time.split('.')[0]
-        print(mess)
-        print('剩余天数：' + days + '天')
+        msg = f'现在时间是：{time_now}\ncheckin: {checkin.status_code} | state: {state.status_code}\nmess\n剩余天数：{days}天'
 
     checkin.close()
     state.close()
 
-    return True
+    return f'剩余天数：{days}天', msg
+
+def send_msg(title, Text):
+    SendKey = environ.get('SendKey')
+    if not SendKey:
+        return False
+    url = f'https://sctapi.ftqq.com/{SendKey}.send?title={title}&desp={Text}'
+    post(url=url)
 
 
 if __name__ == '__main__':
     ck = environ["cookie"]
-    start(ck)
+    try:
+        title, Text = start(ck)
+    except Exception as e:
+        title = '签到失败'
+        Text = e
+    finally:
+        send_msg(title, Text)
