@@ -74,6 +74,7 @@ def main():
     
     for ck in argv[1:]:
         # cookie = cookies.get(ck)
+        print(ck)
         sign(ck, pathd)
    
     # input('任意键结束：')
