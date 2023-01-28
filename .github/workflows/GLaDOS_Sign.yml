@@ -26,4 +26,5 @@ jobs:
 
     - name: Test with Test
       run: |
+        echo ${{ secrets.GLADOS_COOKIE }}
         python ./GLaDOS/GLaDOS_linux.py ${{ secrets.GLADOS_COOKIE }}
