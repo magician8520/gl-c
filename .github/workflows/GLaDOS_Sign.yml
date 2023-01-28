@@ -25,5 +25,7 @@ jobs:
         if [ -f ./GLaDOS/requirements.txt ]; then pip install -r ./GLaDOS/requirements.txt; fi
 
     - name: Test with Test
+      env:
+        cookie: ${{ secrets.GLADOS_COOKIE }}
       run: |
-        python ./GLaDOS/GLaDOS_linux.py ${{ secrets.GLADOS_COOKIE }}
+        python ./GLaDOS/GLaDOS_linux.py
