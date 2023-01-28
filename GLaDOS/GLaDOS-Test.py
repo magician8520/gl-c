@@ -113,6 +113,7 @@ def main():
         return
     
     for ck in cookies:
+        print(ck)
         sign(ck, pathd, date_time)
    
     input('任意键结束：')
