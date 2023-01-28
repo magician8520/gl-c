@@ -1,8 +1,7 @@
 #!/usr/bin/python
 import pytz
-from os import path,environ
-from sys import path as paths
-from json import dumps as jdumps
+from os import environ
+from json import dumps
 from requests import post, get
 from datetime import datetime
 
@@ -21,7 +20,7 @@ def start(cookie):
         headers={'cookie': cookie, 'referer': referer, 'origin': origin, 
         'user-agent': useragent,
         'content-type': 'application/json;charset=UTF-8'}, 
-        data=jdumps(payload)
+        data=dumps(payload)
     )
     state = get(url2,
         headers={'cookie': cookie, 'referer': referer, 'origin': origin, 'user-agent': useragent})
@@ -38,16 +37,9 @@ def start(cookie):
     checkin.close()
     state.close()
 
-    return checkin.status_code, state.status_code, mess, days
+    return True
 
-
-def sign(cookie, pathd):
-    checkin_status_code, state_status_code, mess, days = start(cookie)
-
-def main():
-    pathd = paths[0].replace('\\', '/')
-    ck = environ["cookie"]
-    sign(ck, pathd)
 
 if __name__ == '__main__':
-    main()
+    ck = environ["cookie"]
+    start(ck)
