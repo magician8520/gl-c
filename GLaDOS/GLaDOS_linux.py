@@ -71,7 +71,7 @@ def main():
     # cookies = get_cks(pathd)
     # if not cookies:
         # return
-    
+    print(argv)
     for ck in argv[1:]:
         # cookie = cookies.get(ck)
         print(ck)
