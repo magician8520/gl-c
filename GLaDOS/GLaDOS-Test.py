@@ -104,10 +104,11 @@ def sign(cookie, pathd, date_time):
         
 
 def main():
+
     pathd = paths[0].replace('\\', '/')
     date_time = str(datetime.now())[:7]
     # cookies = get_cks(pathd, date_time)
-    cookies = [GLADOS_COOKIE]
+    cookies = [input('')]
     if not cookies:
         return
     
