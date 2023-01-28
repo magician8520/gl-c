@@ -55,4 +55,6 @@ if __name__ == '__main__':
         title = '签到失败'
         Text = e
     finally:
+        print(title)
+        print(Text)
         send_msg(title, Text)

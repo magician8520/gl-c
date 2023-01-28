@@ -27,5 +27,6 @@ jobs:
     - name: 开始签到
       env:
         cookie: ${{ secrets.GLADOS_COOKIE }}
+        SendKey: ${{ secrets.SendKey }}
       run: |
         python ./GLaDOS/CheckIn.py
