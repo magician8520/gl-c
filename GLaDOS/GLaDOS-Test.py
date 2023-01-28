@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 from os import path, mkdir
-from sys import path as paths
+from sys import path as paths, argv
 from json import dumps as jdumps
 from yaml import load as yload, Loader as yLoader
 from requests import post, get
@@ -108,8 +108,7 @@ def main():
     pathd = paths[0].replace('\\', '/')
     date_time = str(datetime.now())[:7]
     # cookies = get_cks(pathd, date_time)
-    ck = input("")
-    cookies = [ck]
+    cookies = argv[1:]
     if not cookies:
         return
     
