@@ -108,7 +108,8 @@ def main():
     pathd = paths[0].replace('\\', '/')
     date_time = str(datetime.now())[:7]
     # cookies = get_cks(pathd, date_time)
-    cookies = [input('')]
+    ck = input("")
+    cookies = [ck]
     if not cookies:
         return
     
