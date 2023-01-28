@@ -6,7 +6,7 @@ GLaDOS代理自动签到
 
 1. fork仓库
 2. 获取cookie
-3. 将cookie填入Repository secrets中，命名一定要是`GLaDOS_COOKIE`
+3. 将cookie填入`Settings` -> `Secrets and variables` -> `Actions` -> `Repository secrets`中，命名一定要是`GLADOS_COOKIE`
 
 
 ---
