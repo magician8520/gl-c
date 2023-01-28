@@ -23,9 +23,9 @@ jobs:
     - name: Install dependencies
       run: |
         if [ -f ./GLaDOS/requirements.txt ]; then pip install -r ./GLaDOS/requirements.txt; fi
-    - name: getCookie
-      with:
-          GLADOS_COOKIE: ${{  secrets.GLADOS_COOKIE  }}
+
     - name: Test with Test
+      env:
+        GLADOS_COOKIE: ${{  secrets.GLADOS_COOKIE  }}
       run: |
         python ./GLaDOS/GLaDOS-Test.py
