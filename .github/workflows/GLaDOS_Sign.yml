@@ -26,4 +26,4 @@ jobs:
       env:
         cookie: ${{ secrets.GLADOS_COOKIE }}
       run: |
-        python ./GLaDOS/GLaDOS_linux.py
+        python ./GLaDOS/GLaDOS_Sign.py
