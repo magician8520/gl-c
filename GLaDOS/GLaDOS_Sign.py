@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+import pytz
 from os import path,environ
 from sys import path as paths
 from json import dumps as jdumps
@@ -25,7 +25,8 @@ def start(cookie):
     )
     state = get(url2,
         headers={'cookie': cookie, 'referer': referer, 'origin': origin, 'user-agent': useragent})
-    print(f'现在时间是：{datetime.now()}\ncheckin: {checkin.status_code}\nstate: {state.status_code}')
+    tz = pytz.timezone('Asia/Shanghai')
+    print(f'现在时间是：{datetime.now(tz=tz)}\ncheckin: {checkin.status_code}\nstate: {state.status_code}')
 
     if 'message' in checkin.text:
         mess = checkin.json()['message']
