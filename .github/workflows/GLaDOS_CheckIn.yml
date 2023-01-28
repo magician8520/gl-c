@@ -4,9 +4,10 @@
 name: Python application
 
 on:
-  schedule:
-  - cron: "15 3 * * *"
-  push:
+  schedule: # 自动签到时间，cron表达式，不会自己百度
+  - cron: "15 3 * * *" # 分 时 日 月 星期
+
+  push: # 每次推送到main分支会自动运行一次脚本
     branches: [ "main" ]
 
 jobs:
@@ -26,7 +27,7 @@ jobs:
 
     - name: 开始签到
       env:
-        cookie: ${{ secrets.GLADOS_COOKIE }}
-        SendKey: ${{ secrets.SendKey }}
+        cookie: ${{ secrets.GLADOS_COOKIE }} # cookie
+        SendKey: ${{ secrets.SendKey }} # SendKey
       run: |
         python ./GLaDOS/CheckIn.py
