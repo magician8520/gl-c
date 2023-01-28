@@ -72,13 +72,12 @@ def main():
     # if not cookies:
         # return
 #     print(argv)
+    print(environ)
     ck = environ["cookie"]
 #     for ck in argv[1:]:
         # cookie = cookies.get(ck)
 #         print(ck)
     sign(ck, pathd)
-   
-    # input('任意键结束：')
 
 if __name__ == '__main__':
     main()
