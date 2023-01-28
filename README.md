@@ -2,7 +2,7 @@
 
 ## 说明
 GLaDOS代理自动签到
-每天 4:15 和 16:15开始排队签到，具体签到时间以GitHub延迟为准 
+每天 3:15 开始排队签到，具体签到时间以GitHub延迟为准 
 
 ## Github每天自动签到教程
 1. Fork此仓库
@@ -21,7 +21,9 @@ GLaDOS代理自动签到
 [GLaDOS注册入口](https://github.com/glados-network/GLaDOS)
 
 我的邀请码：AZDOF-3654G-EBHR4-O79MD
-
 填写邀请码双方互利
-
 工具推荐使用Clash
+
+## 配置微信推送(Server酱)
+和配置cookie一样的方式，命名为`SendKey`
+
