@@ -25,7 +25,8 @@ def start(cookie):
     state = get(url2,
         headers={'cookie': cookie, 'referer': referer, 'origin': origin, 'user-agent': useragent})
     tz = pytz.timezone('Asia/Shanghai')
-    print(f'现在时间是：{datetime.now(tz=tz)}\ncheckin: {checkin.status_code}\nstate: {state.status_code}')
+    time_now = str(datetime.now(tz=tz))[:19]
+    print(f'现在时间是：{time_now}\ncheckin: {checkin.status_code}\nstate: {state.status_code}')
 
     if 'message' in checkin.text:
         mess = checkin.json()['message']
