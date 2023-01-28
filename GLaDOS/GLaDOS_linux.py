@@ -36,8 +36,8 @@ def start(cookie):
 
     if 'message' in checkin.text:
         mess = checkin.json()['message']
-        time = state.json()['data']['leftDays']
         print(state.json())
+        time = state.json()['data']['leftDays']
         days = time.split('.')[0]
         print(mess)
         print('剩余天数：' + days + '天')
