@@ -1,4 +1,4 @@
-# AuTo-Sign
+# AuTo-CheckIn
 
 ## 说明
 GLaDOS代理自动签到
@@ -10,7 +10,7 @@ GLaDOS代理自动签到
 3. 将cookie填入`Settings` -> `Secrets and variables` -> `Actions` -> `Repository secrets`中，命名一定要是`GLADOS_COOKIE`
 
     ↓↓↓下面有图，无法显示，请使用魔法
-    ![](./images/img-1.png)
+    ![](./GLaDOS/images/img-1.png)
     ↑↑↑上面有图，无法显示，请使用魔法
 
 ---
@@ -26,6 +26,6 @@ GLaDOS代理自动签到
 
 ## 配置微信推送(Server酱)
 
-和配置cookie一样的方式，命名为`SendKey`
+和配置cookie一样的方式，命名为 `SendKey`
 
 [Server酱](https://sct.ftqq.com/)
