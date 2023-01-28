@@ -37,7 +37,7 @@ def start(cookie):
     checkin.close()
     state.close()
 
-    return f'签到成功，剩余天数：{days}天', msg
+    return f'{mess}，剩余天数：{days}天', msg
 
 def send_msg(title, Text):
     SendKey = environ.get('SendKey')

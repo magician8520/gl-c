@@ -25,5 +25,7 @@ GLaDOS代理自动签到
 工具推荐使用Clash
 
 ## 配置微信推送(Server酱)
+
 和配置cookie一样的方式，命名为`SendKey`
 
+[Server酱](https://sct.ftqq.com/)
