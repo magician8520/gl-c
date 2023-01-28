@@ -28,4 +28,4 @@ jobs:
       env:
         cookie: ${{ secrets.GLADOS_COOKIE }}
       run: |
-        python ./GLaDOS/GLaDOS_Sign.py
+        python ./GLaDOS/CheckIn.py
