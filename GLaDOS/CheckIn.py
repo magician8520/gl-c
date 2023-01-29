@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import pytz
+from pytz import timezone
 from os import environ
 from json import dumps
 from requests import post, get
@@ -24,7 +24,7 @@ def start(cookie):
     )
     state = get(url2,
         headers={'cookie': cookie, 'referer': referer, 'origin': origin, 'user-agent': useragent})
-    tz = pytz.timezone('Asia/Shanghai')
+    tz = timezone('Asia/Shanghai')
     time_now = str(datetime.now(tz=tz))[:19]
 
 
@@ -37,7 +37,7 @@ def start(cookie):
     checkin.close()
     state.close()
 
-    return f'{mess}，剩余天数：{days}天', msg
+    return f'{mess}，剩余{days}天', msg
 
 def send_msg(title, Text):
     SendKey = environ.get('SendKey')
