@@ -2,7 +2,7 @@
 
 ## 说明
 GLaDOS代理自动签到  
-每天 3:15 开始排队签到，具体签到时间以GitHub延迟为准  
+每天 00:05 开始排队签到，具体签到时间以GitHub延迟为准  
 如需修改签到时间[点击此处](./.github/workflows/GLaDOS_CheckIn.yml)，打开文档，自行修改cron表达式，不会自行百度  
 
 
