@@ -31,6 +31,6 @@ GLaDOS代理自动签到
 
 ## 配置微信推送(Server酱)
 
-和配置cookie一样的方式，命名为 `SendKey`
+和配置cookie一样的方式，将Server酱中的SendKey复制到`Repository secrets`命名为 `SendKey`
 
 [Server酱](https://sct.ftqq.com/)
