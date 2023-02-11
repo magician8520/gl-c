@@ -16,10 +16,10 @@ GLaDOS代理自动签到
 工具推荐使用Clash  
 
 
-## Github每天自动签到教程  
+## Github-Actions每天自动签到教程  
 
 1. Fork此仓库  
-2. 获取GLaDOS的cookie
+2. 获取GLaDOS的cookie  
     ↓↓↓下面有图，无法显示，请使用魔法  
     ![](./GLaDOS/images/获取cookie.png)  
     ↑↑↑上面有图，无法显示，请使用魔法  
@@ -33,7 +33,7 @@ GLaDOS代理自动签到
 
 
 
-## 配置微信推送(Server酱)  
+## 配置微信推送(Server酱)(非必须)  
 
 和配置cookie一样的方式，将Server酱中的SendKey复制到`Repository secrets`命名为 `SendKey`  
 
