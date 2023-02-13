@@ -2,12 +2,15 @@
 
 ## 说明  
 GLaDOS代理自动签到  
+```bash
+# 项目地址
+https://github.com/ChenAi140/GLaDOS-CheckIn
+```
 每天 <font color="red">20:05</font> 开始排队签到，具体签到时间以GitHub延迟为准。  
 经过本人测试，大概签到时间为早上 04:20 左右，建议大家适当修改时间，防止意外。  
 如需修改签到时间[点击此处](./.github/workflows/GLaDOS_CheckIn.yml)，打开文档，自行修改cron表达式，不会自行百度。  
 
-
-## 注册GLaDOS  
+## 注册GLaDOS
 
 [GLaDOS注册入口](https://github.com/glados-network/GLaDOS)  
 
