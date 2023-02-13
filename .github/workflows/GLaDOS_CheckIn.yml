@@ -8,7 +8,7 @@ on:
     - cron: "5 20 * * *" # 分 时 日 月 星期
 
 jobs:
-  build:
+  CheckIn:
     runs-on: ubuntu-latest
 
     steps:
