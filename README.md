@@ -23,6 +23,7 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 
 1. Fork此仓库  
 2. 获取GLaDOS的cookie  
+    有些浏览器可能显示的英文，但都大差不差  
     ↓↓↓下面有图，无法显示，请使用魔法  
     ![](./GLaDOS/images/获取cookie.png)  
     ↑↑↑上面有图，无法显示，请使用魔法  
@@ -37,5 +38,4 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 ## 配置微信推送(Server酱)(非必须)  
 
 和配置cookie一样的方式，将Server酱中的SendKey复制到`Repository secrets`命名为 `SendKey`  
-
 [Server酱](https://sct.ftqq.com/)  
