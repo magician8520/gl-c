@@ -27,13 +27,11 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
     ![](./GLaDOS/images/获取cookie.png)  
     ↑↑↑上面有图，无法显示，请使用魔法  
 
-
 3. 将cookie填入`Settings` -> `Secrets and variables` -> `Actions` -> `Repository secrets`中，命名一定要是`GLADOS_COOKIE`  
 
     ↓↓↓下面有图，无法显示，请使用魔法  
     ![](./GLaDOS/images/配置cookie.png)  
     ↑↑↑上面有图，无法显示，请使用魔法  
-
 
 
 ## 配置微信推送(Server酱)(非必须)  
