@@ -15,4 +15,5 @@ if __name__ == '__main__':
     finally:
         # print(title)
         print(Text)
+        Text = Text.replace('\n', '%0D%0A%0D%0A')
         send_msg(SendKey, title, Text)
