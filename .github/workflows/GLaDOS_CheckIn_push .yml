@@ -28,4 +28,5 @@ jobs:
         cookie: ${{ secrets.GLADOS_COOKIE }} # cookie
         SendKey: ${{ secrets.SendKey }} # SendKey
       run: |
-        python ./GLaDOS/main.py
+        python ./GLaDOS/test.py   
+        # python ./GLaDOS/main.py
