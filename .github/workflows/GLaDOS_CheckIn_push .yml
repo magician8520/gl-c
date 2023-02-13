@@ -5,28 +5,27 @@ name: push代码
 
 on:
   push: # 每次推送到main分支会自动运行一次脚本
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-      name: 下载代码
-    - name: 准备Python # Set up Python 3.10
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.10"
-    - name: 安装Python依赖
-      run: |
-        if [ -f ./GLaDOS/requirements.txt ]; then pip install -r ./GLaDOS/requirements.txt; fi
+      - uses: actions/checkout@v3
+        name: 下载代码
+      - name: 准备Python # Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: 安装Python依赖
+        run: |
+          if [ -f ./GLaDOS/requirements.txt ]; then pip install -r ./GLaDOS/requirements.txt; fi
 
-    - name: 开始签到
-      env:
-        cookie: ${{ secrets.GLADOS_COOKIE }} # cookie
-        SendKey: ${{ secrets.SendKey }} # SendKey
-      run: |
-        python ./GLaDOS/test.py   
-        # python ./GLaDOS/main.py
+      - name: 开始签到
+        env:
+          cookie: ${{ secrets.GLADOS_COOKIE }} # cookie
+          SendKey: ${{ secrets.SendKey }} # SendKey
+        run: |
+          # python ./GLaDOS/test.py
+          python ./GLaDOS/main.py
