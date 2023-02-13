@@ -1,3 +1,4 @@
+from time import sleep
 from requests import post, get
 from datetime import datetime, timedelta
 
@@ -20,3 +21,4 @@ def send_msg(SendKey, title, Text):
             return '消息推送成功！'
         elif datetime.now() >= stop_time:
             return '程序运行结束！推送结果未知！'
+        sleep(1)
