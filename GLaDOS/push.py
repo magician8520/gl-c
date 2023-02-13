@@ -6,7 +6,7 @@ def send_msg(SendKey, title, Text):
 
     if not SendKey:
         # 无SendKey则拦截推送
-        return False
+        return '未配置SendKey，无法进行微信消息推送。'
     url = f'https://sctapi.ftqq.com/{SendKey}.send?title={title}&desp={Text}'
     rsp = post(url=url)
     pushid = rsp.json()['data']['pushid']
