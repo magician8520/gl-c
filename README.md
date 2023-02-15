@@ -37,9 +37,15 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
     ![配置cookie.png](./GLaDOS/images/配置cookie.png)  
 
 
-## 配置微信推送(Server酱)(非必须)  
+## 配置微信推送(非必须)  
+可以不配置，可以只配置其中一个，也可以都配置  
 
+#### Server酱  
 和配置cookie一样的方式，将Server酱中的SendKey复制到`Repository secrets`命名为 `SendKey`  
 [Server酱](https://sct.ftqq.com/)  
 暂时只支持`方糖服务号`进行推送(因为懒)  
 若此通道被弃用，那到时候再说吧  
+
+#### pushPlus  
+和配置cookie一样的方式，将pushpuls微信公众号中的token复制到`Repository secrets`命名为 `TOKEN`  
+[pushPlus](https://www.pushplus.plus/)  
