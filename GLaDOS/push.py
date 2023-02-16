@@ -9,6 +9,8 @@ def send_msg_serverJ(SendKey, title, Text):
     if not SendKey:
         # 无SendKey则拦截推送
         return '未配置SendKey，无法进行消息推送。'
+    print('=============\nSever酱: 开始推送消息！')
+    Text = Text.replace('\n', '%0A%0A')  # 替换\n，优化微信推送消息显示格式
     url = f'https://sctapi.ftqq.com/{SendKey}.send?title={title}&desp={Text}'
     rsp = post(url=url)
     pushid = rsp.json()['data']['pushid']
@@ -22,6 +24,7 @@ def send_msg_serverJ(SendKey, title, Text):
         now_time = datetime.now()
         print(now_time, ' ---> ', stop_time, '  :  ', count)
         if result:
+            print(result)
             return '消息推送成功！'
         elif now_time >= stop_time:
             return '程序运行结束！推送结果未知！'
@@ -35,6 +38,7 @@ def send_msg_pushplus(token, title, Text):
     if not token:
         # 无token则拦截推送
         return '未配置token，无法进行消息推送。'
+    print('=============\npushPlus: 开始推送消息！')
     url = 'http://www.pushplus.plus/send/'
     headers = {'Content-Type':'application/json'}
     token = '44898c97339f450daf8a548f6080c6c6'

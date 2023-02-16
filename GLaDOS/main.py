@@ -19,11 +19,10 @@ def main():
         # print(title)
         print(Text)
         # Text = Text.replace('\n', '%0D%0A%0D%0A')
-        Text2 = Text.replace('\n', '%0A%0A')  # 替换\n，优化微信推送消息显示格式
-        print('=============\nSever酱: 开始推送消息！')
-        rsp = send_msg_serverJ(SendKey, title, Text2)  # 推送消息，无SendKey不推送
+        
+        rsp = send_msg_serverJ(SendKey, title, Text)  # 推送消息，无SendKey不推送
         print(rsp)
-        print('=============\npushPlus: 开始推送消息！')
+        
         rsp = send_msg_pushplus(token, title, Text)  # 推送消息，无token不推送
         print(rsp)
 
