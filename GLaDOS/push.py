@@ -10,6 +10,7 @@ def send_msg_serverJ(SendKey, title, Text):
         # 无SendKey则拦截推送
         return '未配置SendKey，无法进行消息推送。'
     print('=================================================================\nSever酱: 开始推送消息！')
+    Text = Text.replace('\n', '\n\n')
     url = f'https://sctapi.ftqq.com/{SendKey}.send'
     data = {'title': title, 'desp': Text, 'channel': 9}
     rsp = post(url=url, data=data)
