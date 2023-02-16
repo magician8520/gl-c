@@ -11,8 +11,9 @@ def send_msg_serverJ(SendKey, title, Text):
         return '未配置SendKey，无法进行消息推送。'
     print('=============\nSever酱: 开始推送消息！')
     Text = Text.replace('\n', '%0A%0A')  # 替换\n，优化微信推送消息显示格式
-    url = f'https://sctapi.ftqq.com/{SendKey}.send?title={title}&desp={Text}'
-    rsp = post(url=url)
+    url = f'https://sctapi.ftqq.com/{SendKey}.send'
+    data = {'title': title, 'desp': Text, 'channel': 9}
+    rsp = post(url=url, data=data)
     pushid = rsp.json()['data']['pushid']
     readkey = rsp.json()['data']['readkey']
     state_url = f'https://sctapi.ftqq.com/push?id={pushid}&readkey={readkey}'
