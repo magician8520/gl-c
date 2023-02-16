@@ -44,7 +44,7 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 
 ### 4.1 Server酱
 
-和配置cookie一样的方式，将Server酱中的SendKey复制到`Repository secrets`命名为 `SendKey`  
+和配置cookie一样的方式，将Server酱中的SendKey复制到`Repository secrets`命名为 `SENdKEY`  
 [Server酱](https://sct.ftqq.com/)  
 暂时只支持`方糖服务号`进行推送(因为懒)  
 若此通道被弃用，那到时候再说吧  
