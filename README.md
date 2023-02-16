@@ -21,7 +21,8 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 我的邀请码：AZDOF-3654G-EBHR4-O79MD  
 填写邀请码双方互利  
 工具推荐使用Clash  
-[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/tags)           [Clash for Android](https://github.com/Kr328/ClashForAndroid/tags)  
+[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/tags)  --->  [汉化补丁，可能有广告](https://github.com/BoyceLig/Clash_Chinese_Patch)  
+[Clash for Android](https://github.com/Kr328/ClashForAndroid/tags)  
 
 ## 3. Github-Actions每天自动签到教程
 
