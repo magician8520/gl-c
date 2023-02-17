@@ -8,7 +8,7 @@ echo 开始合并...
 git checkout main
 git merge upstream/main
 
-echo 合并完成！
+echo 合并完成！开始push。
 
 git push
 echo push完成!
