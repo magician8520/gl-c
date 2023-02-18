@@ -53,3 +53,7 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 
 和配置cookie一样的方式，将pushpuls微信公众号中的token复制到`Repository secrets`命名为 `TOKEN`  
 [pushPlus](https://www.pushplus.plus/)  
+
+## 其它  
+最后，求个小小的star  
+QWQ  
