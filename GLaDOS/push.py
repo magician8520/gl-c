@@ -42,7 +42,6 @@ def send_msg_pushplus(token, title, Text):
     print('=================================================================\npushPlus: 开始推送消息！')
     url = 'http://www.pushplus.plus/send/'
     headers = {'Content-Type':'application/json'}
-    token = '44898c97339f450daf8a548f6080c6c6'
     data = {
         "token": token,
         "title": title,
