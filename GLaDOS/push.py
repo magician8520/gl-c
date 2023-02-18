@@ -8,7 +8,7 @@ def send_msg_serverJ(SendKey, title, Text):
 
     if not SendKey:
         # 无SendKey则拦截推送
-        return '未配置SendKey，无法进行消息推送。'
+        return 'Sever酱: 未配置SendKey，无法进行消息推送。'
     print('=================================================================\nSever酱: 开始推送消息！')
     Text = Text.replace('\n', '\n\n')
     url = f'https://sctapi.ftqq.com/{SendKey}.send'
@@ -38,7 +38,7 @@ def send_msg_pushplus(token, title, Text):
 
     if not token:
         # 无token则拦截推送
-        return '未配置token，无法进行消息推送。'
+        return 'pushPlus: 未配置token，无法进行消息推送。'
     print('=================================================================\npushPlus: 开始推送消息！')
     url = 'http://www.pushplus.plus/send/'
     headers = {'Content-Type':'application/json'}
