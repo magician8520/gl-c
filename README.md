@@ -45,7 +45,7 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 
 4. 在电脑中安装 [Git软件](https://git-scm.com/)   
      windows电脑：运行脚本`Push_modify.bat`进行一次Push操作即可激活Actions  
-     Mac电脑：略    (没有Mac，需要自己手动Push)
+     Mac电脑：略    (没有Mac，需要自己手动Push)  
      为保证Actions长期运行，需要每60天进行一次Push操作。  
      手动Push，如无必要尽量只修改`modify.txt`文件，后续更新只需要将其删除然后再更新即可  
 
