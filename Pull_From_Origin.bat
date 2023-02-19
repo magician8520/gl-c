@@ -1,6 +1,7 @@
 @echo off
 
 git remote add upstream https://github.com/ChenAi140/GLaDOS-CheckIn.git
+git remote set-url upstream https://github.com/ChenAi140/GLaDOS-CheckIn.git
 git fetch upstream
 echo 拉取更新完成！
 
