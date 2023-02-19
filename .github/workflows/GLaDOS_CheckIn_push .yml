@@ -30,5 +30,4 @@ jobs:
           SendKey: ${{ secrets.SendKey }} # SendKey
           token: ${{ secrets.TOKEN }} # token
         run: |
-          # python ./GLaDOS/test.py
           python ./GLaDOS/main.py
