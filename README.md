@@ -60,5 +60,8 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 [pushPlus](https://www.pushplus.plus/)  
 
 ## 其它  
+如果需要更新代码，可以重新Fork此仓库  
+或者在电脑中安装 [Git软件](https://git-scm.com/) ，然后运行脚本`Pull_From_Origin.bat`一键更新  
+
 最后，求个小小的star  
 QWQ  
