@@ -1,4 +1,5 @@
 from os import environ
+from logger import logger
 from Check import CheckIn
 from push import send_msg_serverJ , send_msg_pushplus
 
@@ -10,21 +11,23 @@ def main():
     token = environ.get('token')
     try:
         title, Text = CheckIn(ck)
-        print('签到成功！')
-    except Exception as e:
-        print('程序出错！')
-        title = '程序出错！'
-        Text = e
+        logger.info('GLaDOS 签到成功！')
+
+    except Exception as err:
+        logger.error('程序运行出错！')
+        title = '程序运行出错！'
+        Text = err
+
     finally:
-        # print(title)
-        print(Text)
-        # Text = Text.replace('\n', '%0D%0A%0D%0A')
+        tmp = Text.split('\n')
+        for i in tmp:
+            logger.info(i)
         
-        rsp = send_msg_serverJ(SendKey, title, Text)  # 推送消息，无SendKey不推送
-        print(rsp)
+        rsp1 = send_msg_serverJ(SendKey, title, Text)  # 推送消息，无SendKey不推送
+        logger.info(rsp1)
         
-        rsp = send_msg_pushplus(token, title, Text)  # 推送消息，无token不推送
-        print(rsp)
+        rsp2 = send_msg_pushplus(token, title, Text)  # 推送消息，无token不推送
+        logger.info(rsp2)
 
 
 if __name__ == '__main__':

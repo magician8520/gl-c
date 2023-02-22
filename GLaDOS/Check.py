@@ -1,7 +1,5 @@
-from pytz import timezone
 from json import dumps
 from requests import post, get
-from datetime import datetime
 
 
 def CheckIn(cookie):
@@ -33,13 +31,11 @@ def CheckIn(cookie):
             'user-agent': useragent
         }
     )
-    tz = timezone('Asia/Shanghai')
-    time_now = str(datetime.now(tz=tz))[:19]
 
     mess = checkin.json()['message']
     time = state.json()['data']['leftDays']
     days = time.split('.')[0]
-    msg = f'现在时间是：{time_now}\ncheckin: {checkin.status_code} | state: {state.status_code}\n{mess}\n剩余天数：{days}天'
+    msg = f'checkin: {checkin.status_code} | state: {state.status_code}\n{mess}\n剩余天数：{days}天'
 
     checkin.close()
     state.close()
