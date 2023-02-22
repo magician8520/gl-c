@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 下载代码
+      - name: 拉取代码
         uses: actions/checkout@v3
 
       - name: 准备Python 3.10 # Set up Python 3.10

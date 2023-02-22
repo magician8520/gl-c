@@ -1,6 +1,6 @@
 # <font color="red">GLaDOS-CheckIn</font>
 
-## 1. 说明
+## 一、 说明
 
 GLaDOS代理自动签到  
 利用GitHub的Actions功能实现GLaDOS的每天自动签到，具体签到结果可以在Actions中看到  
@@ -14,7 +14,7 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 经过本人测试，大概签到时间为早上 04:20 左右，建议大家适当修改时间，防止意外  
 如需修改签到时间[点击此处](./.github/workflows/GLaDOS_CheckIn.yml)，打开文档，自行修改cron表达式，不会看这里 [Cron表达式](https://help.aliyun.com/document_detail/64769.html)  
 
-## 2. 注册GLaDOS
+## 二、 注册GLaDOS
 
 [GLaDOS注册入口](https://github.com/glados-network/GLaDOS)  
 
@@ -24,7 +24,7 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/tags)  --->  [汉化补丁，可能有广告](https://github.com/BoyceLig/Clash_Chinese_Patch)  
 [Clash for Android](https://github.com/Kr328/ClashForAndroid/tags)  
 
-## 3. Github-Actions每天自动签到教程
+## 三、 Github-Actions每天自动签到教程
 
 1. Fork此仓库  
 
@@ -38,25 +38,29 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 
     ![配置cookie.png](./GLaDOS/images/配置cookie.png)  
 
-4. 在电脑中安装 [Git软件](https://git-scm.com/)   
-     windows电脑：运行脚本`Push_modify.bat`进行一次Push操作即可激活Actions  
-     Mac电脑：略    (没有Mac，需要自己手动Push)  
-     为保证Actions长期运行，需要每60天进行一次Push操作。  
-     手动Push，如无必要尽量只修改`modify.txt`文件，后续更新只需要将其删除然后再更新即可  
+4. 激活Actions  
 
+    ![激活Actions](./GLaDOS/images/激活Actions.png)  
 
-## 4. 配置微信推送(非必须)
+5. 提交代码，保证自动签到的schedule可以正常运行  
+    - 为保证Actions长期运行，需要每60天提交一次代码  
+    - 在电脑中安装 [Git软件](https://git-scm.com/)   
+    - windows电脑：运行脚本`Push_modify.bat`进行一次Push操作即可  
+    - Mac电脑：略    (没有Mac，需要自己手动Push)  
+    - 手动Push，如无必要尽量只修改`modify.txt`文件，后续更新只需要将其删除然后再更新即可  
+
+## 四、 配置微信推送(非必须)
 
 可以不配置，可以只配置其中一个，也可以都配置  
 
-### 4.1 Server酱
+### 1. Server酱
 
 和配置cookie一样的方式，将Server酱中的SendKey复制到`Repository secrets`命名为 `SENDKEY`  
 [Server酱](https://sct.ftqq.com/)  
 暂时只支持`方糖服务号`进行推送(因为懒)  
 若此通道被弃用，那到时候再说吧  
 
-### 4.2 pushPlus
+### 2. pushPlus
 
 和配置cookie一样的方式，将pushpuls微信公众号中的token复制到`Repository secrets`命名为 `TOKEN`  
 [pushPlus](https://www.pushplus.plus/)  
