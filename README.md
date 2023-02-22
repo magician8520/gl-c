@@ -1,9 +1,4 @@
 # <font color="red">GLaDOS-CheckIn</font>
-！！！  
-
-之前忘了把自己的pushPlus的token删掉，导致都推送到我这儿了，各位重新Fork代码吧。(擦汗)  
-
-！！！  
 
 ## 1. 说明
 
