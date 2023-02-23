@@ -14,6 +14,8 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 经过本人测试，大概签到时间为早上 04:20 左右，建议大家适当修改时间，防止意外  
 如需修改签到时间[点击此处](./.github/workflows/GLaDOS_CheckIn.yml)，打开文档，自行修改cron表达式，不会看这里 [Cron表达式](https://help.aliyun.com/document_detail/64769.html)  
 
+如有疑问，请提交 Issues  
+
 ## 二、 注册GLaDOS
 
 [GLaDOS注册入口](https://github.com/glados-network/GLaDOS)  
@@ -65,7 +67,8 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 和配置cookie一样的方式，将pushpuls微信公众号中的token复制到`Repository secrets`命名为 `TOKEN`  
 [pushPlus](https://www.pushplus.plus/)  
 
-## 其它  
+## 五、其它
+
 如果需要更新代码，可以重新Fork此仓库  
 或者在电脑中安装 [Git软件](https://git-scm.com/) ，然后运行脚本`Pull_From_Origin.bat`一键更新  
 
