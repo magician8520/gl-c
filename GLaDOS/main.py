@@ -9,7 +9,13 @@ def main():
     ck = environ["cookie"]
     SendKey = environ.get('SendKey')
     token = environ.get('token')
+
+    if not ck:
+        logger.info('请先配置GLADOS_COOKIE！')
+        return
+
     try:
+
         title, Text = CheckIn(ck)
         logger.info('GLaDOS 签到成功！')
 
