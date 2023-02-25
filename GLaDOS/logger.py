@@ -3,7 +3,7 @@ from pytz import timezone
 from datetime import datetime
 
 # 修复时区
-def Shanghai(sec, what):
+def Shanghai():
     tz = timezone('Asia/Shanghai')
     timenow = datetime.now(tz)
     return timenow.timetuple()
