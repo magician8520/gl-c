@@ -3,9 +3,11 @@ from pytz import timezone
 from datetime import datetime
 
 # 修复时区
-tz = timezone('Asia/Shanghai')
-timenow = datetime.now(tz)
-logging.Formatter.converter = timenow.timetuple()
+def Shanghai(sec, what):
+    tz = timezone('Asia/Shanghai')
+    timenow = datetime.now(tz)
+    return timenow.timetuple()
+logging.Formatter.converter = Shanghai
 
 # 创建logger对象
 logger = logging.getLogger(__name__)
