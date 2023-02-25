@@ -1,11 +1,17 @@
 import logging
+from pytz import timezone
+from datetime import datetime
 
+# 修复时区
+tz = timezone('Asia/Shanghai')
+timenow = datetime.now(tz)
+logging.Formatter.converter = timenow.timetuple()
 
 # 创建logger对象
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)  # log等级总开关
 
-formatter = logging.Formatter("[%(process)d] [%(levelname)s]: %(asctime)s ---> %(message)s")
+formatter = logging.Formatter("%(asctime)s [%(levelname)s]:  %(message)s")
 
 # 控制台handler
 stream_handler = logging.StreamHandler()
