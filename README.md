@@ -44,30 +44,35 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 
     ![激活Actions](./GLaDOS/images/激活Actions.png)  
 
-5. 提交代码，保证自动签到的schedule可以正常运行  
-    - 为保证Actions长期运行，需要每60天提交一次代码  
-    - 在电脑中安装 [Git软件](https://git-scm.com/)   
-    - windows电脑：运行脚本`Push_modify.bat`进行一次Push操作即可  
-    - Mac电脑：略    (没有Mac，需要自己手动Push)  
-    - 手动Push，如无必要尽量只修改`modify.txt`文件，后续更新只需要将其删除然后再更新即可  
+5. 修改定时任务文件  
 
-## 四、 配置微信推送(非必须)
+    - 打开`.github/workflows/`文件夹  
+    - 修改`Schedule.yml`文件  
+    - 按照提示修改即可  
+
+    如果不修改，Fork过来的定时任务是不会自动运行的  
+    在网页上即可修改文件，无需pull到本地  
+
+
+
+
+## 四、 配置微信推送(非必须)  
 
 可以不配置，可以只配置其中一个，也可以都配置  
 
-### 1. Server酱
+### 1. Server酱  
 
 和配置cookie一样的方式，将Server酱中的SendKey复制到`Repository secrets`命名为 `SENDKEY`  
 [Server酱](https://sct.ftqq.com/)  
 暂时只支持`方糖服务号`进行推送(因为懒)  
 若此通道被弃用，那到时候再说吧  
 
-### 2. pushPlus
+### 2. pushPlus  
 
 和配置cookie一样的方式，将pushpuls微信公众号中的token复制到`Repository secrets`命名为 `TOKEN`  
 [pushPlus](https://www.pushplus.plus/)  
 
-## 五、其它
+## 五、其它  
 
 如果需要更新代码，可以重新Fork此仓库  
 或者在电脑中安装 [Git软件](https://git-scm.com/) ，然后运行脚本`Pull_From_Origin.bat`一键更新  

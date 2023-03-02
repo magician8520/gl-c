@@ -1,11 +1,13 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: GLaDOS定时签到
+name: PushCode
 
 on:
-  schedule: # 自动签到时间，cron表达式，不会自己百度
-    - cron: "5 20 * * *" # 分 时 日 月 星期
+  push:     # 修改main分支下的modify.txt文件，并推送代码，会触发Actions
+    branches: ["main"]
+    paths:  
+      - 'modify.txt'
 
 jobs:
   GLaDOS-CheckIn:
