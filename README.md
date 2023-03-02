@@ -1,5 +1,7 @@
 # <font color="red">GLaDOS-CheckIn</font>
 
+​                                                           ![stars](https://img.shields.io/github/stars/ChenAi140/GLaDOS-CheckIn?style=social)       ![forks](https://img.shields.io/github/forks/ChenAi140/GLaDOS-CheckIn?style=social)       ![last-commit](https://img.shields.io/github/last-commit/ChenAi140/GLaDOS-CheckIn)
+
 ## 一、 说明
 
 GLaDOS代理自动签到  
