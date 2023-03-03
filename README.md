@@ -1,6 +1,8 @@
 # <font color="red">GLaDOS-CheckIn</font>
 
-​                                                           ![stars](https://img.shields.io/github/stars/ChenAi140/GLaDOS-CheckIn?style=social)       ![forks](https://img.shields.io/github/forks/ChenAi140/GLaDOS-CheckIn?style=social)       ![last-commit](https://img.shields.io/github/last-commit/ChenAi140/GLaDOS-CheckIn)
+![stars](https://img.shields.io/github/stars/ChenAi140/GLaDOS-CheckIn?style=social)  
+![forks](https://img.shields.io/github/forks/ChenAi140/GLaDOS-CheckIn?style=social)  
+![last-commit](https://img.shields.io/github/last-commit/ChenAi140/GLaDOS-CheckIn)  
 
 ## 一、 说明
 
@@ -9,12 +11,12 @@ GLaDOS代理自动签到
 利用[Server酱](https://sct.ftqq.com/)或者[pushPlus](https://www.pushplus.plus/)将签到结果推送到微信  
 
 ```bash
-# 项目地址
+# 仓库地址
 https://github.com/ChenAi140/GLaDOS-CheckIn
 ```
-每天 <font color="red">20:05</font> 开始排队签到，具体签到时间以GitHub延迟为准  
-经过本人测试，大概签到时间为早上 04:20 左右，建议大家适当修改时间，防止意外  
-如需修改签到时间[点击此处](./.github/workflows/GLaDOS_CheckIn.yml)，打开文档，自行修改cron表达式，不会看这里 [Cron表达式](https://help.aliyun.com/document_detail/64769.html)  
+每天 <font color="red">20:05</font> 开始排队签到，具体签到时间以GitHub延迟为准，大概延迟8h+    
+建议大家自行修改一个时间点，防止意外  
+如需修改签到时间[点击此处](./.github/workflows/Schedule.yml)，打开文档，自行修改cron表达式，不会看这里 [Cron表达式](https://help.aliyun.com/document_detail/64769.html)  
 
 如有疑问，请提交 Issues  
 
@@ -30,21 +32,34 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 
 ## 三、 Github-Actions每天自动签到教程
 
+
 1. Fork此仓库  
+    <details><summary>点击此处展开</summary><pre>
+    点击右上角的 Fork 按钮
+        <img src="./GLaDOS/images/fork.png" alt="Fork"><br/>
+    点击 Create fork ，然后等待仓库创建成功
+        <img src="./GLaDOS/images/create_fork.png" alt="Create fork">
+    </pre> </details>
 
-2. 获取GLaDOS的cookie  
+2. 注册GLaDOS，并获取cookie  
+    <details><summary>点击此处展开</summary><pre>
+    注册GLaDOS：略    
+    获取cookie
+        <img src="./GLaDOS/images/获取cookie.png" alt="获取cookie">
+    </pre> </details>
 
-    有些浏览器可能显示的英文，但都大差不差，若图片未显示，则需要使用魔法或者解决DNS污染  
-
-    ![获取cookie.png](./GLaDOS/images/获取cookie.png)  
-
-3. 将cookie填入`Settings` -> `Secrets and variables` -> `Actions` -> `Repository secrets`中，命名一定要是`GLADOS_COOKIE`  
-
-    ![配置cookie.png](./GLaDOS/images/配置cookie.png)  
+3. 填写`secrets`  
+   将cookie填入`Settings` -> `Secrets and variables` -> `Actions` -> `Repository secrets`中，命名一定要是`GLADOS_COOKIE`
+    <details><summary>点击此处展开</summary><pre>
+    将cookie填入secrets
+        <img src="./GLaDOS/images/配置cookie.png" alt="配置cookie">
+    </pre> </details>
 
 4. 激活Actions  
-
-    ![激活Actions](./GLaDOS/images/激活Actions.png)  
+   <details><summary>点击此处展开</summary><pre>
+    激活Actions，点击同意
+        <img src="./GLaDOS/images/激活Actions.png" alt="激活Actions">
+    </pre> </details>
 
 5. 修改定时任务文件  
 
@@ -52,9 +67,16 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
     - 修改`Schedule.yml`文件  
     - 按照提示修改即可  
 
-    如果不修改，Fork过来的定时任务是不会自动运行的  
-    在网页上即可修改文件，无需pull到本地  
-
+    Fork过来的定时任务默认不生效，需要进行手动修改一次  
+    在网页上即可修改文件，无需pull到本地，[点击此处进入修改](./.github/workflows/Schedule.yml)  
+   <details><summary>点击此处展开</summary><pre>
+    修改Schedule.yaml
+        <img src="./GLaDOS/images/修改Schedule.png" alt="修改Schedule">
+    提交修改
+        <img src="./GLaDOS/images/提交修改.png" alt="提交修改">
+    查看Actions
+        <img src="./GLaDOS/images/查看Actions.png" alt="查看Actions">
+    </pre> </details>
 
 
 
