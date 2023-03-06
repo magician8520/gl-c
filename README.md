@@ -63,13 +63,13 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 
 5. 添加定时任务  
 
-    - 打开`./GLaDOS/Schedule.yml`文件，并复制里面的内容  
-    - 打开`.github/workflows/`文件夹，点击`Add file` -> `Create new file`  
-    - 将刚才复制的内容粘贴进去，并命名文件，然后提交即可
+    - 打开[./GLaDOS/Schedule.yml](./GLaDOS/Schedule.yml)文件，并复制里面的内容  
+    - 打开[.github/workflows/](./.github/workflows/)文件夹，点击`Add file` -> `Create new file`  
+    - 将刚才复制的内容粘贴进去，并命名文件，然后提交即可 
 
    <details><summary>点击此处展开</summary><pre>
     复制./GLaDOS/Schedule.yaml的内容
-        <img src="./GLaDOS/images/Schedule.png" alt="复制Schedule.yaml内容">
+        <img src="./GLaDOS/images/复制Schedule.png" alt="复制Schedule.yaml内容">
     在.github/workflows/目录下新建Schedule.yml
         <img src="./GLaDOS/images/创建Schedule.png" alt="新建Schedule.yml">
     修改新建的Schedule.yaml的内容
