@@ -16,7 +16,7 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 ```
 每天 <font color="red">20:05</font> 开始排队签到，具体签到时间以GitHub延迟为准，大概延迟8h+    
 建议大家自行修改一个时间点，防止意外  
-如需修改签到时间[点击此处](./.github/workflows/Schedule.yml)，打开文档，自行修改cron表达式，不会看这里 [Cron表达式](https://help.aliyun.com/document_detail/64769.html)  
+如需修改签到时间[点击此处](./.github/workflows/)，打开文档，自行修改cron表达式，不会看这里 [Cron表达式](https://help.aliyun.com/document_detail/64769.html)  
 
 如有疑问，请提交 Issues  
 
