@@ -61,21 +61,21 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
         <img src="./GLaDOS/images/激活Actions.png" alt="激活Actions">
     </pre> </details>
 
-5. 修改定时任务文件  
+5. 添加定时任务  
 
-    - 打开`.github/workflows/`文件夹  
-    - 修改`Schedule.yml`文件  
-    - 按照提示修改即可  
+    - 打开`./GLaDOS/Schedule.yml`文件，并复制里面的内容  
+    - 打开`.github/workflows/`文件夹，点击`Add file` -> `Create new file`  
+    - 将刚才复制的内容粘贴进去，并命名文件，然后提交即可
 
-    Fork过来的定时任务默认不生效，需要进行手动修改一次  
-    在网页上即可修改文件，无需pull到本地，[点击此处进入修改](./.github/workflows/Schedule.yml)  
    <details><summary>点击此处展开</summary><pre>
-    修改Schedule.yaml
-        <img src="./GLaDOS/images/修改Schedule.png" alt="修改Schedule">
-    提交修改
-        <img src="./GLaDOS/images/提交修改.png" alt="提交修改">
-    查看Actions
-        <img src="./GLaDOS/images/查看Actions.png" alt="查看Actions">
+    复制./GLaDOS/Schedule.yaml的内容
+        <img src="./GLaDOS/images/Schedule.png" alt="复制Schedule.yaml内容">
+    在.github/workflows/目录下新建Schedule.yml
+        <img src="./GLaDOS/images/创建Schedule.png" alt="新建Schedule.yml">
+    修改新建的Schedule.yaml的内容
+        <img src="./GLaDOS/images/修改新Schedule.png" alt="修改新Schedule">
+    修改完成后提交即可
+        <img src="./GLaDOS/images/提交Schedule.png" alt="提交新Schedule">
     </pre> </details>
 
 

@@ -8,7 +8,10 @@ def main():
     # 获取actions secrets配置的cookie SendKey
     ck = environ["cookie"]
     SendKey = environ.get('SendKey')
+    isServerJpush = int(environ.get('isServerJpush'))
     token = environ.get('token')
+    ispushpluspush = int(environ.get('ispushpluspush'))
+
 
     if not ck:
         logger.info('请先配置GLADOS_COOKIE！')
@@ -28,12 +31,15 @@ def main():
         tmp = Text.split('\n')
         for i in tmp:
             logger.info(i)
-        
-        rsp1 = send_msg_serverJ(SendKey, title, Text)  # 推送消息，无SendKey不推送
-        logger.info(rsp1)
-        
-        rsp2 = send_msg_pushplus(token, title, Text)  # 推送消息，无token不推送
-        logger.info(rsp2)
+
+        if isServerJpush:
+            # 推送消息，无SendKey不推送
+            rsp1 = send_msg_serverJ(SendKey, title, Text)
+            logger.info(rsp1)
+        if ispushpluspush:
+            # 推送消息，无token不推送
+            rsp2 = send_msg_pushplus(token, title, Text)
+            logger.info(rsp2)
 
 
 if __name__ == '__main__':
