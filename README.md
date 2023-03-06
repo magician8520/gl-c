@@ -99,6 +99,12 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 ## 五、其它  
 
 如果需要更新代码，可以重新Fork此仓库  
+手动同步更新代码
+   <details><summary>点击此处展开</summary><pre>
+    点击 Sync fork，然后点击 Update branch 即可更新代码，这样会保留自己的修改，无需重新配置
+        <img src="./GLaDOS/images/手动同步更新.png" alt="手动同步更新">
+    </pre> </details>
+2023-3-7之前的Fork需要点击`Sync fork` -> `Discard * commits`放弃之前的修改，强制更新，然后重新按教程配置Schedule.yml  
 
 最后，求个小小的star  
 QWQ  
