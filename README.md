@@ -100,15 +100,19 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 
 #### 更新仓库
 如果需要更新代码，可以重新Fork此仓库  
-手动同步更新代码
+手动同步更新代码  
+
    <details><summary>点击此处展开</summary><pre>
     点击 Sync fork，然后点击 Update branch 即可更新代码，这样会保留自己的修改，无需重新配置
         <img src="./GLaDOS/images/手动同步更新.png" alt="手动同步更新">
     </pre> </details>
-2023-3-7之前的Fork需要点击`Sync fork` -> `Discard * commits`放弃之前的修改，强制更新，然后重新按教程配置Schedule.yml  
-#### 多账号配置
+
+2023-3-7之前的Fork需要点击`Sync fork` -> `Discard * commits`放弃之前的修改，强制更新，然后重新按教程配置Schedule.yml    
+
+#### 多账号配置  
+
 <details><summary>点击此处展开</summary><pre>
-PS: 图片看不清就点开看
+PS: 图片看不清就点开看  
 在Repository secrets里面添加多个cookie和推送的key，并分别命名
     <img src="./GLaDOS/images/多账号cookie.png" alt="多账号cookie">
 在workflows里面新建yml文件，并修改相应的内容
