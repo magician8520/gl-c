@@ -38,7 +38,7 @@ jobs:
           # ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
           # 默认值0(不推送消息)，可选值1(开启Server酱消息推送)
           isServerJpush: 0
-          SendKey: ${{ secrets.SendKey }} # SendKey
+          SendKey: ${{ secrets.SENDKEY }} # SendKey
           # ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
           # 默认值0(不推送消息)，可选值1(开启pushplus消息推送)
           ispushpluspush: 0
