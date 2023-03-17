@@ -87,6 +87,7 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 ### 1. Server酱  
 
 和配置cookie一样的方式，将Server酱中的SendKey复制到`Repository secrets`命名为 `SENDKEY`  
+然后去你创建的那个`.yml`文件里面修改`isServerJpush`的值为`1`  
 [Server酱](https://sct.ftqq.com/)  
 暂时只支持`方糖服务号`进行推送(因为懒)  
 若此通道被弃用，那到时候再说吧  
@@ -94,13 +95,14 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 ### 2. pushPlus  
 
 和配置cookie一样的方式，将pushpuls微信公众号中的token复制到`Repository secrets`命名为 `TOKEN`  
+然后去你创建的那个`.yml`文件里面修改`ispushpluspush`的值为`1`  
 [pushPlus](https://www.pushplus.plus/)  
 
-## 五、其它  
+## 五、其它
 
 #### 更新仓库
 如果需要更新代码，可以重新Fork此仓库  
-手动同步更新代码  
+或者手动同步更新代码  
 
    <details><summary>点击此处展开</summary><pre>
     点击 Sync fork，然后点击 Update branch 即可更新代码，这样会保留自己的修改，无需重新配置
