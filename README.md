@@ -30,7 +30,7 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/tags)  --->  [汉化补丁，可能有广告](https://github.com/BoyceLig/Clash_Chinese_Patch)  
 [Clash for Android](https://github.com/Kr328/ClashForAndroid/tags)  
 
-## 三、 Github-Actions每天自动签到教程
+## 三、 自动签到教程
 
 
 1. Fork此仓库  
