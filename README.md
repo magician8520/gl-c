@@ -9,6 +9,7 @@
 GLaDOS代理自动签到  
 利用GitHub的Actions功能实现GLaDOS的每天自动签到，具体签到结果可以在Actions中看到  
 利用[Server酱](https://sct.ftqq.com/)或者[pushPlus](https://www.pushplus.plus/)将签到结果推送到微信  
+新增[Qmsg](https://qmsg.zendee.cn/)可以将消息推送到QQ， 
 
 ```bash
 # 仓库地址
@@ -89,16 +90,24 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 ### 1. Server酱  
 
 和配置cookie一样的方式，将Server酱中的SendKey复制到`Repository secrets`命名为 `SENDKEY`  
-然后去你创建的那个`.yml`文件里面修改`isServerJpush`的值为`1`  
+然后去你创建的那个`.yml`文件里面修改`is_ServerChan_push`的值为`1`  
 [Server酱](https://sct.ftqq.com/)  
 暂时只支持`方糖服务号`进行推送(因为懒)  
 若此通道被弃用，那到时候再说吧  
 
-### 2. pushPlus  
+### 2. PushPlus  
 
 和配置cookie一样的方式，将pushpuls微信公众号中的token复制到`Repository secrets`命名为 `TOKEN`  
-然后去你创建的那个`.yml`文件里面修改`ispushpluspush`的值为`1`  
-[pushPlus](https://www.pushplus.plus/)  
+然后去你创建的那个`.yml`文件里面修改`is_PushPlus_push`的值为`1`  
+[PushPlus](https://www.pushplus.plus/)  
+
+### 3. Qmsg  
+
+具体配置请查看[私聊消息使用步骤简述](https://qmsg.zendee.cn/api)  
+将获取到的key填入`Repository secrets`，命名为`Key`
+然后去你创建的那个`.yml`文件里面修改`is_Qmsg_push`的值为`1`  
+[Qmsg](https://qmsg.zendee.cn/)  
+
 
 ## 五、其它
 

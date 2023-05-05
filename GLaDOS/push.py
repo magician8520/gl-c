@@ -4,16 +4,16 @@ from logger import logger
 from requests import post, get
 
 
-def send_msg_serverJ(SendKey, title, Text):
+def send_msg_ServerChan(SendKey, title, msg):
 
     if not SendKey:
         # 无SendKey则拦截推送
         return 'Sever酱: 未配置SendKey，无法进行消息推送。'
     logger.info('========================================')
     logger.info('Sever酱: 开始推送消息！')
-    Text = Text.replace('\n', '\n\n')
+    msg = msg.replace('\n', '\n\n')
     url = f'https://sctapi.ftqq.com/{SendKey}.send'
-    data = {'title': title, 'desp': Text, 'channel': 9}
+    data = {'title': title, 'desp': msg, 'channel': 9}
     rsp = post(url=url, data=data)
     pushid = rsp.json()['data']['pushid']
     readkey = rsp.json()['data']['readkey']
@@ -32,7 +32,7 @@ def send_msg_serverJ(SendKey, title, Text):
         count += 1
         sleep(1)
 
-def send_msg_pushplus(token, title, Text):
+def send_msg_PushPlus(token, title, msg):
 
     if not token:
         # 无token则拦截推送
@@ -44,10 +44,21 @@ def send_msg_pushplus(token, title, Text):
     data = {
         "token": token,
         "title": title,
-        "content": Text,
+        "content": msg,
         "template": "txt",
         "channel": "wechat"
     }
     data = dumps(data).encode(encoding='utf-8')
     rsp = post(url=url, data=data, headers=headers)
     return rsp.json()['msg']
+
+def send_msg_Qmsg(key, title, msg):
+    if not key:
+        return 'Qmsg: 未配置key，无法进行消息推送。'
+    logger.info('========================================')
+    logger.info('Qmsg: 开始推送消息！')
+    url = f'https://qmsg.zendee.cn:443/send/{key}?msg={title}\n{msg}'
+    rsp = get(url=url).json()
+    if rsp and rsp['success'] == True:
+        return '消息推送成功！'
+    return rsp
