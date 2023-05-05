@@ -78,6 +78,8 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
         <img src="./GLaDOS/images/提交Schedule.png" alt="提交新Schedule">
     </pre> </details>
 
+**注意**：Actions中的工作流在仓库闲置60天后就会被停止，所以需要每60天更新一下仓库
+
 
 
 ## 四、 配置微信推送(非必须)  

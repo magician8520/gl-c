@@ -18,15 +18,12 @@ def main():
         return
 
     try:
-
         title, Text = CheckIn(ck)
         logger.info('GLaDOS 签到成功！')
-
     except Exception as err:
         logger.error('程序运行出错！')
         title = '程序运行出错！'
         Text = err
-
     finally:
         tmp = Text.split('\n')
         for i in tmp:
