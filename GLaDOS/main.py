@@ -38,7 +38,7 @@ def main():
             rsp2 = send_msg_PushPlus(token, title, msg)
             logger.info(rsp2)
         if is_Qmsg_push:                # Qmsg推送消息，无key不推送
-            rsp3 = send_msg_Qmsg(key, title, msg)
+            rsp3 = send_msg_Qmsg(key, msg)
             logger.info(rsp3)
 
 

@@ -52,12 +52,12 @@ def send_msg_PushPlus(token, title, msg):
     rsp = post(url=url, data=data, headers=headers)
     return rsp.json()['msg']
 
-def send_msg_Qmsg(key, title, msg):
+def send_msg_Qmsg(key, msg):
     if not key:
         return 'Qmsg: 未配置key，无法进行消息推送。'
     logger.info('========================================')
     logger.info('Qmsg: 开始推送消息！')
-    url = f'https://qmsg.zendee.cn:443/send/{key}?msg={title}\n{msg}'
+    url = f'https://qmsg.zendee.cn:443/send/{key}?msg={msg}'
     rsp = get(url=url).json()
     if rsp and rsp['success'] == True:
         return '消息推送成功！'
