@@ -4,6 +4,8 @@
 ![forks](https://img.shields.io/github/forks/ChenAi140/GLaDOS-CheckIn?style=social)  
 ![last-commit](https://img.shields.io/github/last-commit/ChenAi140/GLaDOS-CheckIn)  
 
+---
+
 ## 一、 说明
 
 GLaDOS代理自动签到  
@@ -13,13 +15,15 @@ GLaDOS代理自动签到
 
 ```bash
 # 仓库地址
-https://github.com/ChenAi140/GLaDOS-CheckIn
+https://github.com/feixuei/GLaDOS-CheckIn.git
 ```
 每天 <font color="red">20:05</font> 开始排队签到，具体签到时间以GitHub延迟为准，大概延迟8h+    
 建议大家自行修改一个时间点，防止意外  
 如需修改签到时间[点击此处](./.github/workflows/)，打开文档，自行修改cron表达式，不会看这里 [Cron表达式](https://help.aliyun.com/document_detail/64769.html)  
 
 如有疑问，请提交 Issues  
+
+---
 
 ## 二、 注册GLaDOS
 
@@ -30,6 +34,8 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 工具推荐使用Clash  
 [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/tags)  --->  [汉化补丁，可能有广告](https://github.com/BoyceLig/Clash_Chinese_Patch)  
 [Clash for Android](https://github.com/Kr328/ClashForAndroid/tags)  
+
+---
 
 ## 三、 自动签到教程
 
@@ -81,7 +87,7 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 
 **注意**：Actions中的工作流在仓库闲置60天后就会被停止，所以需要每60天更新一下仓库
 
-
+---
 
 ## 四、 配置微信推送(非必须)  
 
@@ -108,6 +114,8 @@ https://github.com/ChenAi140/GLaDOS-CheckIn
 然后去你创建的那个`.yml`文件里面修改`is_Qmsg_push`的值为`1`  
 [Qmsg](https://qmsg.zendee.cn/)  
 
+---
+
 
 ## 五、其它
 
@@ -131,6 +139,4 @@ PS: 图片看不清就点开看
 在workflows里面新建yml文件，并修改相应的内容
     <img src="./GLaDOS/images/多账号yml配置.png" alt="多账号yml配置">
 </pre> </details>
-
-最后，求个小小的star  
-QWQ  
+---
