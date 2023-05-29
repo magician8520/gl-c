@@ -17,7 +17,7 @@ GLaDOS代理自动签到
 # 仓库地址
 https://github.com/feixuei/GLaDOS-CheckIn.git
 ```
-每天 <font color="red">20:05</font> 开始排队签到， <font color="red">具体签到时间以GitHub延迟为准，大概延迟8h+</font>    
+每天 `20:05` 开始排队签到， 具体签到时间以GitHub延迟为准，大概延迟`8h+`    
 建议大家自行修改一个时间点，防止意外  
 如需修改签到时间[点击此处](./.github/workflows/)，打开文档，自行修改cron表达式，不会看这里 [Cron表达式](https://help.aliyun.com/document_detail/64769.html)  
 
@@ -139,4 +139,5 @@ PS: 图片看不清就点开看
 在workflows里面新建yml文件，并修改相应的内容
     <img src="./GLaDOS/images/多账号yml配置.png" alt="多账号yml配置">
 </pre> </details>
+
 ---
