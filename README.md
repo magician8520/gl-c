@@ -139,13 +139,12 @@ PS: 图片看不清就点开看
 在workflows里面新建yml文件，并修改相应的内容
     <img src="./GLaDOS/images/多账号yml配置.png" alt="多账号yml配置">
 </pre> </details>
-#### 自动更新仓库
 
-关于60天更新一次仓库
+#### 自动更新仓库  
 
-看[AutoPush.yml](./GLaDOS/AutoPush.yml)，我测试是能push的，你们可以试试
+关于60天更新一次仓库  
 
-
+看[AutoPush.yml](./GLaDOS/AutoPush.yml)，我测试是能push的，你们可以试试  
 
 
 ---

@@ -63,6 +63,6 @@ jobs:
 # 在https://github.com/settings/tokens 的Personal access tokens -> Tokens(classic)生成一个token
 # Note：自己填
 # Expiration：token过期时间，自己配置
-# Select scopes：repo打√
+# Select scopes：repo打 √
 # 然后生成token，将token填入https://github.com/feixuei/GLaDOS-CheckIn/settings/secrets/actions 中和cookie一样配置，命名为 TOKEN_GITHUB
 
