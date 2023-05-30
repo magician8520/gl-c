@@ -143,7 +143,7 @@ PS: 图片看不清就点开看
 
 关于60天更新一次仓库
 
-看[AutoPysh.yml](./GLaDOS/AutoPust.yml)，我测试是能push的，你们可以试试
+看[AutoPush.yml](./GLaDOS/AutoPush.yml)，我测试是能push的，你们可以试试
 
 
 
