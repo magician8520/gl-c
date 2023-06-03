@@ -1,13 +1,13 @@
 from json import dumps
 from requests import post, get
-
+from fake_useragent import UserAgent
 
 def CheckIn(cookie):
     url = "https://glados.rocks/api/user/checkin"
     url2 = "https://glados.rocks/api/user/status"
     referer = 'https://glados.rocks/console/checkin'
     origin = "https://glados.rocks"
-    useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+    useragent = get_ua()
     payload = {
         'token': 'glados.network'
     }
@@ -41,3 +41,12 @@ def CheckIn(cookie):
     state.close()
 
     return f'{mess}，剩余{days}天', msg
+
+def get_ua():
+
+    # 创建UserAgent对象
+    user_agent = UserAgent()
+    # 获取随机的User-Agent字符串
+    random_user_agent = user_agent.random
+    # 随机的User-Agent
+    return random_user_agent
